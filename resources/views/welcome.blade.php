@@ -81,6 +81,7 @@
 
             <div class="content">
                 <h1>Ejemplo cliente TPV</h1>
+                <a class="nav-link" href="{{ url('/pago') }}">Página de pago</a>
             </div>
         </div>
     </body>
