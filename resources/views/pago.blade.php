@@ -23,7 +23,7 @@
                 </div>
                 <div class="form-group">
                   <label for="urlRedirect">urlRedirect</label>
-                  <input type="text" class="form-control" id="urlRedirect" name="urlRedirect" placeholder="URL" value="https://www.google.es">
+                  <input type="text" class="form-control" id="urlRedirect" name="urlRedirect" placeholder="URL" value="http://localhost:8001/respuesta">
                 </div>
                 <button  type="button" id="paymentButton" class="btn btn-primary">Enviar</button>
               </form>
@@ -32,14 +32,14 @@
     </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script type='text/javascript'>
 
     $(document).ready(function(){
         const URL = 'http://localhost:8000/api/sendPayment';
 
         $('#paymentButton').click(function(){
-            var form = $("#paymentForm");
+            var form = $('#paymentForm');
 
             var obj = {
                 user : $('#user').val(),
@@ -50,7 +50,7 @@
             ;
 
             $.post(URL, obj, function(data, status){
-              var openWindow = window.open("", '_self');
+              var openWindow = window.open('', '_self');
               openWindow.document.write(data);
               openWindow.document.close();
             })
