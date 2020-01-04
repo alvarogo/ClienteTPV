@@ -19,4 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/pago', 'TPVController@paginaPago')->name('pago');
-Route::post('/respuesta', 'TPVController@recibirRespuesta')->name('respuesta');
+Route::get('/respuesta', 'TPVController@recibirRespuesta')->name('respuesta');

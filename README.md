@@ -27,3 +27,11 @@ protected $middleware = [
         ...
     ];
 ```
+Añadir excepción en app/Http/Middleware/VerifyCsrfToken
+```
+protected $middleware = [
+        ...
+        "http://localhost:8001/respuesta" (Url donde se recibe la respuesta)
+        ...
+    ];
+```
