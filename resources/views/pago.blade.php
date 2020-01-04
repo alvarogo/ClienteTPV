@@ -25,7 +25,8 @@
                   <label for="urlRedirect">urlRedirect</label>
                   <input type="text" class="form-control" id="urlRedirect" name="urlRedirect" placeholder="URL" value="http://localhost:8001/respuesta">
                 </div>
-                <button  type="button" id="paymentButton" class="btn btn-primary">Enviar</button>
+                <button  type="submit" class="btn btn-primary">Enviar desde formulario</button>
+                <button  type="button" id="paymentButton" class="btn btn-primary">Enviar desde AJAX</button>
               </form>
             </div>
         </div>
@@ -39,8 +40,9 @@
         const URL = 'http://localhost:8000/api/sendPayment';
 
         $('#paymentButton').click(function(){
-            var form = $('#paymentForm');
 
+            // Los datos se cogen del formulario en el ejemplo pero no
+            // es necesario tener un formulario si se envía usando AJAX.
             var obj = {
                 user : $('#user').val(),
                 password : $('#password').val(),
