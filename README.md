@@ -15,8 +15,9 @@ Ejemplo cliente tpv
     09. Ejecutar composer dump-autoload
     10. Ejecutar php artisan migrate:install
     11. Ejecutar php artisan migrate
-    12. Ejecutar php artisan serve --port=8001 (Puede se otro puerto pero el código de ejemplo está preparado para este)
-    13. Abrir en el navegador http://localhost:8001/
+    12. Ejecutar php artisan key:generate
+    13. Ejecutar php artisan serve --port=8001 (Puede se otro puerto pero el código de ejemplo está preparado para este)
+    14. Abrir en el navegador http://localhost:8001/
 ```
 
 ## Clonar el proyecto del api
@@ -31,9 +32,10 @@ Ejemplo cliente tpv
     08. Copiar el archivo '.env.example' como '.env'. (Cambiar la configuración de acceso a mysql si no usais la configuración por defecto).
     09. Ejecutar composer dump-autoload
     10. Ejecutar php artisan migrate:install
-    11. Ejecutar php artisan migrate --seed
-    12. Ejecutar php artisan serve --port=8000 (Puede se otro puerto pero el código de ejemplo está preparado para este)
-    13. Abrir en el navegador http://localhost:8000/payments
+    11. Ejecutar php artisan key:generate
+    12. Ejecutar php artisan migrate --seed
+    13. Ejecutar php artisan serve --port=8000 (Puede se otro puerto pero el código de ejemplo está preparado para este)
+    14. Abrir en el navegador http://localhost:8000/payments
 ```
 
 **NOTA:** Para probar el API con los dos proyectos de ejemplo se deben usar los puertos 8000 para el API y 8001 para el cliente porque las llamadas se hacen con esos puertos. A la hora de probar la API usando vuestra aplicación podéis usar el puerto que queráis.
