@@ -22,7 +22,7 @@ Ejemplo cliente tpv
 
 ## Clonar el proyecto del api
 ``` 
-    01. Descargar la release
+    01. Descargar la release https://github.com/m3cruz/TPV_Virtual_IW/releases/tag/v0.1
     02. Descomprimir la release
     03. Iniciar Xampp (Apache y MySQL).
     04. Abrir phpMyAdmin (Botón Admin de Xampp en MySQL).
