@@ -126,21 +126,21 @@ La respuesta de la API contiene 3 parámetos: cod, msg, status.
     ```
  - Pago rechazado porque la tarjeta no tiene saldo suficiente:
     ```
-        cod: 200
+        cod: 402
         msg: Rechazado
         reason: Saldo insuficiente
     ```
     * Se puede provocar introduciendo una tajeta acabada en 0.<br/><br/>
  - Pago rechazado porque la tarjeta no se ha aceptado:
     ```
-        cod: 200
+        cod: 402
         msg: Rechazado
         reason: Tarjeta no aceptada
     ```
     * Se puede provocar introduciendo una tajeta acabada en 1.<br/><br/>
  - Pago rechazado porque la tarjeta ha caducado:
     ```
-        cod: 200
+        cod: 402
         msg: Rechazado
         reason: Tarjeta caducada
     ```
