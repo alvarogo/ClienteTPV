@@ -133,13 +133,12 @@ La respuesta de la API contiene 3 parámetos: cod, msg, status.
         reason: Saldo insuficiente
     ```
     * Se puede provocar introduciendo una tajeta acabada en 0.<br/><br/>
- - Pago rechazado porque la tarjeta no se ha aceptado:
+ - Pago rechazado porque la tarjeta está deshabilitada:
     ```
         cod: 402
         msg: Rechazado
         reason: Tarjeta no aceptada
     ```
-    * Se puede provocar introduciendo una tajeta acabada en 1.<br/><br/>
  - Pago rechazado porque la tarjeta ha caducado:
     ```
         cod: 402
@@ -170,6 +169,12 @@ La respuesta de la API contiene 3 parámetos: cod, msg, status.
     ```
         cod: 401
         msg: Credenciales inválidas
+    ```  
+    
+ - Credenciales inválidas:
+    ```
+        cod: 403
+        msg: Usuario deshabilitado
     ```  
 
  - Error del servidor:
