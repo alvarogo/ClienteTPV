@@ -171,7 +171,7 @@ La respuesta de la API contiene 3 parámetos: cod, msg, status.
         msg: Credenciales inválidas
     ```  
     
- - Credenciales inválidas:
+ - Usuario deshabilitado:
     ```
         cod: 403
         msg: Usuario deshabilitado
